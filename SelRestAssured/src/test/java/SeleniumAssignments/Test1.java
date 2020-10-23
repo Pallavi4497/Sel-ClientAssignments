@@ -29,7 +29,7 @@ public class Test1 {
 	@Test
 	public void f() {
 		
-		WebElement w=driver.findElement(By.xpath("/html/body/div[3]/table/tbody/tr[2]/td[3]/div/span/div/button/span"));
+		WebElement w=driver.findElement(By.className("multiselect-selected-text"));
 		Select s1=new Select(w);
 		s1.selectByIndex(2);
 		
